@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <h1>
+      Write a program that takes the user's name and birth year as inputs.
+      Calculate their age and display a message with their name and age.
+    </h1>
+
+    <script>
+      let name = prompt("Enter your name:");
+      let birthYear = prompt("Enter your birth year:");
+      let currentYear = new Date().getFullYear();
+      let age = currentYear - birthYear;
+      console.log(`Hello ${name}, you are ${age} years old.`);
+    </script>
+  </body>
+</html>
